@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+     
         
         body {
-            background-color:#88C6ED;
-            height:100vh;
-        
-            background-repeat: no-repeat;
-            background-position: center;
+            
+           height: 100vh;
            
             display: flex;
             align-items: center;
              justify-content: center;
-             margin: 0px;
-             padding: 0px;
+            background-position: center;
 
         }
+      
+
 
 .birthdayCard {
   position: relative;
@@ -223,7 +222,7 @@
 
 .cardInside {
   position: absolute;
-  background-color: #fff;
+  background-color:#00bbf9;
   width: 250px;
   height:350px;
   z-index:-1;
@@ -242,6 +241,7 @@
   position: relative;
   top:-100px;
   margin: 25px;
+  
 }
 
 p {
@@ -252,17 +252,23 @@ p {
 .name {
   margin-left:150px;
 }
+.a{
+  width:220px;
+  height: 35px;
+  align-items: center;
+}
+
     </style>
 </head>
 <body>
-   <div class="img">
+   <div id="1">
     <div class="birthdayCard">
         
         <div class="cardFront">
           <div class="front-text">
           <h3 class="happy">HAPPY</h3>
           <h2 class="bday">BIRTHDAY</h2> 
-          <h3 class="toyou">to you!</h3>  
+          <h3 class="toyou">TO YOU!</h3>  
           </div>
           <div class="wrap-deco">
         <div class="decorations"></div>
@@ -282,12 +288,15 @@ p {
              <div class="inside-text">
           <h3 class="happy">HAPPY</h3>
           <h2 class="bday">BIRTHDAY</h2> 
-          <h3 class="toyou">to you!</h3>  
+          <h3 class="toyou">TO YOU!</h3>  
           </div>
             <div class="wishes">
             <p>Dear Shruti, </p>
             <p>Happy birthday!! I hope your day is filled with lots of love and laughter! May all of your birthday wishes come true.</p>
             <p class="name">Shreya</p>
+            <audio controls class="a">
+              <source src="hbd.mp3">
+            </audio>
             </div>
           </div>
         </div>
