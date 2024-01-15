@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday</title>
+    <script>
+      function  welcome(){
+        window.open("index1.html")
+      }
+    </script>
     <style>
      
         
@@ -58,7 +63,7 @@
   position: relative;
   background-color: #fff;
   width: 250px;
-  height:350px;
+  height:360px;
   overflow: hidden;
   transform-origin: left;
   box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
@@ -223,7 +228,7 @@
   position: absolute;
   background-color:darkturquoise;
   width: 250px;
-  height:350px;
+  height:360px;
   z-index:-1;
   left:0;
   top:0;
@@ -255,11 +260,29 @@ p {
   width:220px;
   height: 35px;
   align-items: center;
+  
 }
+.b{
+ height:20px;
+  width:190px;
+  float: none;
+  background-color:darkturquoise;
+  text-align: center;
+  border-radius: 10%;
+  font-family: cursive;
+  font-size: 13px;
+}
+.b:hover{
+  
+transform: scale(1.1); /* Increase the size on hover */
 
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+
+}
     </style>
 </head>
 <body>
+ 
 
    <div id="1">
     <div class="birthdayCard">
@@ -296,11 +319,14 @@ p {
             <p class="name">Shreya!</p>
             <audio controls class="a">
               <source src="song1.mp3">
+           
             </audio>
+            <button class="b" onclick="welcome()">Go Nxt Page</button>
             </div>
           
           </div>
         </div>
    </div>
+  
 </body>
 </html>
